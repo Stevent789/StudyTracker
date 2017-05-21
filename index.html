@@ -2,122 +2,84 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Study Tracker</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Study Tracker</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="indexStyle.css">
   </head>
-  <body ng-app>
-<h1>StudyTracker</h1>
-
-    <!-- <form class="" action="index.html" method="post">
-      <p>Subject</p>
-      <input type="text" ng-model="birds"><br>
-<p>{{birds}}</p>
-
-      <input type="text" ng-model="words"/>
-      <p>{{words}}</p>
-    </form> -->
-
-<div class="w3-animate-opacity" id="left-pane">
-    <!-- // Month Section -->
-    <!-- //Row A -->
-<!--    <div class ="container">-->
-      <div id="seatSelection">
-          <div class="row" id="rowA">
-            <div class="col-sm-1" id="A1">April 1</div>
-            <div class="col-sm-1" id="A2">April 2</div>
-            <div class="col-sm-1" id="A3">April 3</div>
-            <div class="col-sm-1" id="A4">April 4</div>
-            <div class="col-sm-1" id="A5">April 5</div>
-            <div class="col-sm-1" id="A6">April 6</div>
-          </div>
-          <!-- //Row B -->
-          <div class="row" id="rowB">
-            <div class="col-sm-1" id="B1">April 7</div>
-            <div class="col-sm-1" id="B2">April 8</div>
-            <div class="col-sm-1" id="B3">April 9</div>
-            <div class="col-sm-1" id="B4">April 10</div>
-            <div class="col-sm-1" id="B5">April 11</div>
-            <div class="col-sm-1" id="B6">April 12</div>
-          </div>
-          <!-- //Row C -->
-          <div class="row" id="rowC">
-            <div class="col-sm-1" id="C1">April 13</div>
-            <div class="col-sm-1" id="C2">April 14</div>
-            <div class="col-sm-1" id="C3">April 15</div>
-            <div class="col-sm-1" id="C4">April 16</div>
-            <div class="col-sm-1" id="C5">April 17</div>
-            <div class="col-sm-1" id="C6">April 18</div>
-          </div>
-          <!-- //Row D -->
-          <div class="row" id="rowD">
-            <div class="col-sm-1" id="D1">April 19</div>
-            <div class="col-sm-1" id="D2">April 20</div>
-            <div class="col-sm-1" id="D3">April 21</div>
-            <div class="col-sm-1" id="D4">April 22</div>
-            <div class="col-sm-1" id="D5">April 23</div>
-            <div class="col-sm-1" id="D6">April 24</div>
-          </div>
-          <!-- Row E -->
-          <div class="row" id="rowE">
-            <div class="col-sm-1" id="E1">April 25</div>
-            <div class="col-sm-1" id="E2">April 26</div>
-            <div class="col-sm-1" id="E3">April 27</div>
-            <div class="col-sm-1" id="E4">April 28</div>
-            <div class="col-sm-1" id="E5">April 29</div>
-            <div class="col-sm-1" id="E6">April 30</div>
-          </div>
-        <button class="w3-btn w3-khaki w3-round-large" id='ready-button'>Submit</button>
-      </div>
-<!--    </div>-->
-    <!-- //end of container for month -->
-</div>
-
-<div id="right-pane">
-<!-- //Instructions -->
-    <div id="marquee">
-        <ul><h3>How to Use Study Tracker</h3>
-          <li>Click on the day of the month you wish to record study contributed to studying</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-      </ul>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-default" style="border-bottom-width: 0px;margin-bottom: 0px;">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">StudyTracker</a>
     </div>
-    <!-- // Form -->
-    <form class="type">
-        <div>
-            <label>Subject:</label>
-            <br>
-            <input class="w3-input" type="text" placeholder="Enter subject(s)" id="subject">
-        </div>
-        <div>
-            <label>Assignments:</label>
-            <br>
-            <input class="w3-input" type="text" placeholder="Enter assignment(s)" id="hour1">
-        </div>
-        <div>
-            <label>Hours completed:</label>
-            <br>
-            <input class="w3-input" type="email" placeholder="Enter hour(s) completed" id="hour2">
-        </div>
-        <!-- <div>
-            <label>Due Date</label>
-            <br>
-            <input class="w3-input" type="text" placeholder="555-555-5555" id="phoneNum">
-        </div> -->
-        <div>
-            <button type= 'button' class="w3-btn w3-khaki w3-round-large" id="form-submit">Submit</button>
-            <button class="w3-btn w3-khaki w3-round-large" id="reset">Reset</button>
-        </div>
-    </form>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="test.html">Test</a></li>
+      <li><a href="extra.html">Take a Break</a></li>
+    </ul>
+  </div>
+</nav>
+    <!-- nav end -->
+    <!-- project start -->
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>A New Way to be Organized without the hassle</h1>
+            <h3>No longer worry about not studying enough. </h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>You are smart</h1>
+            <h3>We will plan your daily acaedmic schedule  </h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are amazing</h1>
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+  </div>
 </div>
 
+    <!-- end-->
+    <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;"><img src="" width="200px" height = "200px"><h2>Becker Hecker</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
+    <div class="col-sm-4" style="background-color:lavender;"><img src="" width="200px" height = "200px"><h2>Becker Hecker</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
+    <div class="col-sm-4" style="background-color:lavender;"><img src="" width="200px" height = "200px"><h2>Becker Hecker</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
 
-
-<script src="app.js" charset="utf-8"></script>
-<!-- <script src="lib/angular.min.js"></script> -->
+  </div>
   </body>
 </html>

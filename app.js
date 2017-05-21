@@ -13,20 +13,20 @@ $('.row div').on('click', function(){
     if( $(this).hasClass('red')){
       $(this).css('background-color', 'red');
       calNumber = $(this).html();
-      seatsTotal.push(calNumber);
+      calTotal.push(calNumber);
       console.log(calTotal);
     }else{
       $(this).css('background-color', 'green');
       var calNumber = $(this).html();
-      var ind = seatsTotal.indexOf(calNumber);
-      seatsTotal.splice(ind, 1);
+      var ind = calTotal.indexOf(calNumber);
+      calTotal.splice(ind, 1);
       console.log(calTotal);
     }
   });
 
     //    this makes the form appear when the sready button is clicked
     $('#ready-button').on('click', function(){
-          $('.type').css('visibility', 'visible');
+          $('form').css('visibility', 'visible');
           //$('#marquee').css('visibility', 'hidden');
         //  $('form').addClass('w3-animate-right');
     });
@@ -51,4 +51,11 @@ $('.row div').on('click', function(){
 
 
     });
+
+    $('#ready-button').on('click', function(){
+          $('form').css('visibility', 'visible')
+          //$('#marquee').css('visibility', 'hidden');
+        //  $('form').addClass('w3-animate-right');
+    });
+
 });

@@ -1,69 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>StudyTracker</title>
-          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
-     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Study Tracker</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <link href="styles.css" rel="stylesheet" >
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Passion+One:400,700|Lobster' rel='stylesheet' type='text/css'> <bgsound src="jazz.htm" loop="infinite">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="indexStyle.css">
   </head>
   <body>
-    <!-- Nav -->
-    <nav>
-      <ul>
-        <li width="100px" style="width: 100px;"><img alt="Brand" src="logo.jpg" width="100%"></li>
-        <li class="pad"><a class="active" href="../home/index.html">Home</a></li>
-        <li class="pad"><a   href="../history/index.html">History</a></li>
-        <li class="pad"><a  href="../ContactUs/index.html">Contact Us</a></li>
-        <li class="pad"><a href="../about/index.html">About</a></li>
-        <li class="pad"><a href="../members/index.html">Member Gallery</a></li>
-      </ul>
-    </nav>
-    <!-- Nav end -->
-   <div class="container-fluid slide" data-role="page"  >
-        <div class="para">
-        <h1 style="text-align: center; ">Welcome to the future of academic preparation</h1><p style="text-align: center;"></p>
-      <a class="button" href="../history/index.html">Learn More</a></div>
+    <!-- nav -->
+    <nav class="navbar navbar-default" style="border-bottom-width: 0px;margin-bottom: 0px;">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">StudyTracker</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="test.html">Test</a></li>
+      <li><a href="extra.html">Take a Break</a></li>
+    </ul>
+  </div>
+</nav>
+    <!-- nav end -->
+    <!-- project start -->
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>A New Way to be Organized without the hassle</h1>
+            <h3>No longer worry about not studying enough. </h3>
+        </hgroup>
+        <a href="test.html"><button class="btn btn-hero btn-lg" role="button">Test</button></a>
       </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>You are smart</h1>
+            <h3>We will plan your daily acaedmic schedule  </h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are amazing</h1>
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+    <!-- end-->
+    <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;"><img src="images/IMG_0363.JPG" width="200px" height = "200px"><h2>Becker Hecker</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
+    <div class="col-sm-4" style="background-color:lavender;"><img src="images/IMG_0363.JPG" width="200px" height = "200px"><h2>Becker Hatter</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
+    <div class="col-sm-4" style="background-color:lavender;"><img src="images/IMG_0363.JPG" width="200px" height = "200px"><h2>Becker Hacker</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis</p></div>
 
-      	<footer id="footer">
-      	  <div class="nav_bottom">
-
-      	  <div class="container">
-      	    <div class="col-lg-4">
-      	      <h3>Pages</h3>
-      	      <ul>
-      	        <li><a href="../history/index.html">History</a></li>
-      	        <li><a href="../ContactUs/index.html">Contact Us</a></li>
-      	        <li><a href="../about/index.html">About</a></li>
-      	      </ul>
-      	    </div>
-      	    <div class="col-lg-4">
-      	     <h3>Social Media</h3>
-      	       <ul>
-      	        <li><a href="#">facebook</a></li>
-      	        <li><a href="#">instagram</a></li>
-      	       </ul>
-      	     </div>
-      	     <div class="col-lg-4">
-      	     <h3>Pictures</h3>
-      	       <ul>
-      	        <li><a href="../members/index.html">Member Gallery</a></li>
-      	       </ul>
-      	     </div>
-      	</footer>
-
-
+  </div>
   </body>
 </html>

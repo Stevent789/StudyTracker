@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Study Tracker</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="testStyle.css">
+  </head>
+  <body ng-app>
+    <!-- nav -->
+    <nav >
+      <a href="#">StudyTracker</a>
+      <a href="index.html">Home</a>
+      <a href="test.html">Test</a>
+      <a href="extra.html">Take a Break</a>
+</nav>
+    <!-- nav end -->
+<h1>StudyTracker</h1>
+
+    <!-- <form class="" action="index.html" method="post">
+      <p>Subject</p>
+      <input type="text" ng-model="birds"><br>
+<p>{{birds}}</p>
+
+      <input type="text" ng-model="words"/>
+      <p>{{words}}</p>
+    </form> -->
+
+<div class="w3-animate-opacity" id="left-pane">
+    <!-- // Month Section -->
+    <!-- //Row A -->
+<!--    <div class ="container">-->
+      <div id="seatSelection">
+          <div class="row" id="rowA">
+            <div class="col-sm-1" id="A1">April 1</div>
+            <div class="col-sm-1" id="A2">April 2</div>
+            <div class="col-sm-1" id="A3">April 3</div>
+            <div class="col-sm-1" id="A4">April 4</div>
+            <div class="col-sm-1" id="A5">April 5</div>
+            <div class="col-sm-1" id="A6">April 6</div>
+          </div>
+          <!-- //Row B -->
+          <div class="row" id="rowB">
+            <div class="col-sm-1" id="B1">April 7</div>
+            <div class="col-sm-1" id="B2">April 8</div>
+            <div class="col-sm-1" id="B3">April 9</div>
+            <div class="col-sm-1" id="B4">April 10</div>
+            <div class="col-sm-1" id="B5">April 11</div>
+            <div class="col-sm-1" id="B6">April 12</div>
+          </div>
+          <!-- //Row C -->
+          <div class="row" id="rowC">
+            <div class="col-sm-1" id="C1">April 13</div>
+            <div class="col-sm-1" id="C2">April 14</div>
+            <div class="col-sm-1" id="C3">April 15</div>
+            <div class="col-sm-1" id="C4">April 16</div>
+            <div class="col-sm-1" id="C5">April 17</div>
+            <div class="col-sm-1" id="C6">April 18</div>
+          </div>
+          <!-- //Row D -->
+          <div class="row" id="rowD">
+            <div class="col-sm-1" id="D1">April 19</div>
+            <div class="col-sm-1" id="D2">April 20</div>
+            <div class="col-sm-1" id="D3">April 21</div>
+            <div class="col-sm-1" id="D4">April 22</div>
+            <div class="col-sm-1" id="D5">April 23</div>
+            <div class="col-sm-1" id="D6">April 24</div>
+          </div>
+          <!-- Row E -->
+          <div class="row" id="rowE">
+            <div class="col-sm-1" id="E1">April 25</div>
+            <div class="col-sm-1" id="E2">April 26</div>
+            <div class="col-sm-1" id="E3">April 27</div>
+            <div class="col-sm-1" id="E4">April 28</div>
+            <div class="col-sm-1" id="E5">April 29</div>
+            <div class="col-sm-1" id="E6">April 30</div>
+          </div>
+        <button class="w3-btn w3-khaki w3-round-large" id='ready-button'>Submit</button>
+      </div>
+<!--    </div>-->
+    <!-- //end of container for month -->
+</div>
+
+<div id="right-pane">
+<!-- //Instructions -->
+    <div id="marquee">
+        <ul><h3>How to Use Study Tracker</h3>
+          <li>Click on the day of the month you wish to record study contributed to studying</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+    </div>
+    <!-- // Form -->
+    <form class="type">
+        <div>
+            <label>Subject:</label>
+            <br>
+            <input class="w3-input" type="text" placeholder="Enter subject(s)" id="subject">
+        </div>
+        <div>
+            <label>Assignments:</label>
+            <br>
+            <input class="w3-input" type="text" placeholder="Enter assignment(s)" id="hour1">
+        </div>
+        <div>
+            <label>Hours spent</label>
+            <br>
+            <input class="w3-input" type="email" placeholder="Enter hour(s) completed" id="hour2">
+        </div>
+        <div>
+            <br>
+            <!-- <input class="w3-input" type="text" placeholder="555-555-5555" id="phoneNum"> -->
+            <!-- <input class="w3-input" id="phoneNum" type="text" placeholder="Enter Due Date..." ng-model="words"/-->
+            <p class="w3-input" id="phoneNum">Due Dates: Algebra - practice 3.2 due April fifth, English - Article due April 31</p>
+
+        </div>
+        <div>
+            <button type= 'button' class="w3-btn w3-khaki w3-round-large" id="form-submit">Submit</button>
+            <button type= 'button' class="w3-btn w3-khaki w3-round-large" id="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+
+
+<script src="app.js" charset="utf-8"></script>
+<script src="lib/angular.min.js"></script>
+  </body>
+</html>
